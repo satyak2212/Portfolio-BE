@@ -11,50 +11,55 @@ public class Portfolio {
 
 	  ObjectId id;
 	  @Id
-	private String 	regNum;
+	private String 	stockId;
 	
 	private String name;
-	private String author;
 	private int price;
-	
+	private String ticker;
+	private String portfilioId;
 	public ObjectId getId() {
 		return id;
 	}
-
 	public void setId(ObjectId id) {
 		this.id = id;
 	}
-
-	public String getRegNum() {
-		return regNum;
+	public String getStockId() {
+		return stockId;
 	}
-
-	public void setRegNum(String i) {
-		this.regNum = i;
+	public void setStockId(String stockId) {
+		this.stockId = stockId;
 	}
-
-
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
-	public String getAuthor() {
-		return author;
-	}
-
-	public void setAuthor(String author) {
-		this.author = author;
-	}
-
 	public int getPrice() {
 		return price;
 	}
-
 	public void setPrice(int price) {
 		this.price = price;
 	}
+	public String getTicker() {
+		return ticker;
+	}
+	public void setTicker(String ticker) {
+		this.ticker = ticker;
+	}
+	public String getPortfilioId() {
+		return portfilioId;
+	}
+	public void setPortfilioId(String portfilioId) {
+		this.portfilioId = portfilioId;
+	}
+	public String getMarketValue() {
+		return marketValue;
+	}
+	public void setMarketValue(String marketValue) {
+		this.marketValue = marketValue;
+	}
+	private String marketValue;
+	
+	
 }
